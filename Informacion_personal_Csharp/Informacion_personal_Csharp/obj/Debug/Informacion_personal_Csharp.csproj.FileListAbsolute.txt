@@ -1,0 +1,10 @@
+C:\Users\Edgardo Caceres\Documents\GitHub\Datos-Personales\Informacion_personal_Csharp\Informacion_personal_Csharp\bin\Debug\Informacion_personal_Csharp.exe.config
+C:\Users\Edgardo Caceres\Documents\GitHub\Datos-Personales\Informacion_personal_Csharp\Informacion_personal_Csharp\bin\Debug\Informacion_personal_Csharp.exe
+C:\Users\Edgardo Caceres\Documents\GitHub\Datos-Personales\Informacion_personal_Csharp\Informacion_personal_Csharp\bin\Debug\Informacion_personal_Csharp.pdb
+C:\Users\Edgardo Caceres\Documents\GitHub\Datos-Personales\Informacion_personal_Csharp\Informacion_personal_Csharp\obj\Debug\Informacion_personal_Csharp.csproj.AssemblyReference.cache
+C:\Users\Edgardo Caceres\Documents\GitHub\Datos-Personales\Informacion_personal_Csharp\Informacion_personal_Csharp\obj\Debug\Informacion_personal_Csharp.Form1.resources
+C:\Users\Edgardo Caceres\Documents\GitHub\Datos-Personales\Informacion_personal_Csharp\Informacion_personal_Csharp\obj\Debug\Informacion_personal_Csharp.Properties.Resources.resources
+C:\Users\Edgardo Caceres\Documents\GitHub\Datos-Personales\Informacion_personal_Csharp\Informacion_personal_Csharp\obj\Debug\Informacion_personal_Csharp.csproj.GenerateResource.cache
+C:\Users\Edgardo Caceres\Documents\GitHub\Datos-Personales\Informacion_personal_Csharp\Informacion_personal_Csharp\obj\Debug\Informacion_personal_Csharp.csproj.CoreCompileInputs.cache
+C:\Users\Edgardo Caceres\Documents\GitHub\Datos-Personales\Informacion_personal_Csharp\Informacion_personal_Csharp\obj\Debug\Informacion_personal_Csharp.exe
+C:\Users\Edgardo Caceres\Documents\GitHub\Datos-Personales\Informacion_personal_Csharp\Informacion_personal_Csharp\obj\Debug\Informacion_personal_Csharp.pdb
