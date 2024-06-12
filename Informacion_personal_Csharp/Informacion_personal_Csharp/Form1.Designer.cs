@@ -31,30 +31,30 @@
             this.lbldatospersonales = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblnombres = new System.Windows.Forms.Label();
-            this.txtnombres = new System.Windows.Forms.TextBox();
-            this.txtapellidos = new System.Windows.Forms.TextBox();
-            this.lblapellidos = new System.Windows.Forms.Label();
-            this.lblfechan = new System.Windows.Forms.Label();
-            this.txtemail = new System.Windows.Forms.TextBox();
-            this.lblemail = new System.Windows.Forms.Label();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.lblidentidad = new System.Windows.Forms.Label();
+            this.rbviudo = new System.Windows.Forms.RadioButton();
+            this.rbdivorciado = new System.Windows.Forms.RadioButton();
+            this.rbsoltero = new System.Windows.Forms.RadioButton();
+            this.rbcasado = new System.Windows.Forms.RadioButton();
+            this.lblestadoc = new System.Windows.Forms.Label();
+            this.cmbdepart = new System.Windows.Forms.ComboBox();
+            this.dtpfechaNa = new System.Windows.Forms.DateTimePicker();
+            this.lbldepartamento = new System.Windows.Forms.Label();
             this.txttelefono = new System.Windows.Forms.TextBox();
             this.lbltelefono = new System.Windows.Forms.Label();
-            this.lbldepartamento = new System.Windows.Forms.Label();
-            this.btnllenar = new System.Windows.Forms.Button();
-            this.btnborrar = new System.Windows.Forms.Button();
-            this.dtpfechaNa = new System.Windows.Forms.DateTimePicker();
-            this.cmbdepart = new System.Windows.Forms.ComboBox();
-            this.lblestadoc = new System.Windows.Forms.Label();
-            this.rbcasado = new System.Windows.Forms.RadioButton();
-            this.rbsoltero = new System.Windows.Forms.RadioButton();
-            this.rbdivorciado = new System.Windows.Forms.RadioButton();
-            this.rbviudo = new System.Windows.Forms.RadioButton();
-            this.lblidentidad = new System.Windows.Forms.Label();
-            this.txtid = new System.Windows.Forms.TextBox();
-            this.ltmostrardatos = new System.Windows.Forms.ListBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.lblemail = new System.Windows.Forms.Label();
+            this.lblfechan = new System.Windows.Forms.Label();
+            this.txtapellidos = new System.Windows.Forms.TextBox();
+            this.lblapellidos = new System.Windows.Forms.Label();
+            this.txtnombres = new System.Windows.Forms.TextBox();
+            this.lblnombres = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.ltmostrardatos = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnborrar = new System.Windows.Forms.Button();
+            this.btnllenar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -106,143 +106,84 @@
             this.panel2.Size = new System.Drawing.Size(379, 364);
             this.panel2.TabIndex = 2;
             // 
-            // panel3
+            // txtid
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.ltmostrardatos);
-            this.panel3.Controls.Add(this.btnborrar);
-            this.panel3.Controls.Add(this.btnllenar);
-            this.panel3.Location = new System.Drawing.Point(397, 87);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(391, 364);
-            this.panel3.TabIndex = 3;
+            this.txtid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtid.Location = new System.Drawing.Point(150, 13);
+            this.txtid.Multiline = true;
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(217, 25);
+            this.txtid.TabIndex = 22;
+            this.txtid.TextChanged += new System.EventHandler(this.txtid_TextChanged);
+            this.txtid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtid_KeyPress);
             // 
-            // lblnombres
+            // lblidentidad
             // 
-            this.lblnombres.AutoSize = true;
-            this.lblnombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnombres.Location = new System.Drawing.Point(13, 61);
-            this.lblnombres.Name = "lblnombres";
-            this.lblnombres.Size = new System.Drawing.Size(85, 20);
-            this.lblnombres.TabIndex = 0;
-            this.lblnombres.Text = "Nombres:";
+            this.lblidentidad.AutoSize = true;
+            this.lblidentidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblidentidad.Location = new System.Drawing.Point(18, 18);
+            this.lblidentidad.Name = "lblidentidad";
+            this.lblidentidad.Size = new System.Drawing.Size(90, 20);
+            this.lblidentidad.TabIndex = 21;
+            this.lblidentidad.Text = "Identidad:";
             // 
-            // txtnombres
+            // rbviudo
             // 
-            this.txtnombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombres.Location = new System.Drawing.Point(150, 58);
-            this.txtnombres.Multiline = true;
-            this.txtnombres.Name = "txtnombres";
-            this.txtnombres.Size = new System.Drawing.Size(217, 25);
-            this.txtnombres.TabIndex = 1;
+            this.rbviudo.AutoSize = true;
+            this.rbviudo.Location = new System.Drawing.Point(295, 323);
+            this.rbviudo.Name = "rbviudo";
+            this.rbviudo.Size = new System.Drawing.Size(63, 17);
+            this.rbviudo.TabIndex = 20;
+            this.rbviudo.TabStop = true;
+            this.rbviudo.Text = "Viudo/a";
+            this.rbviudo.UseVisualStyleBackColor = true;
             // 
-            // txtapellidos
+            // rbdivorciado
             // 
-            this.txtapellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtapellidos.Location = new System.Drawing.Point(150, 98);
-            this.txtapellidos.Multiline = true;
-            this.txtapellidos.Name = "txtapellidos";
-            this.txtapellidos.Size = new System.Drawing.Size(217, 25);
-            this.txtapellidos.TabIndex = 3;
+            this.rbdivorciado.AutoSize = true;
+            this.rbdivorciado.Location = new System.Drawing.Point(191, 323);
+            this.rbdivorciado.Name = "rbdivorciado";
+            this.rbdivorciado.Size = new System.Drawing.Size(87, 17);
+            this.rbdivorciado.TabIndex = 19;
+            this.rbdivorciado.TabStop = true;
+            this.rbdivorciado.Text = "Divorciado/a";
+            this.rbdivorciado.UseVisualStyleBackColor = true;
             // 
-            // lblapellidos
+            // rbsoltero
             // 
-            this.lblapellidos.AutoSize = true;
-            this.lblapellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblapellidos.Location = new System.Drawing.Point(18, 98);
-            this.lblapellidos.Name = "lblapellidos";
-            this.lblapellidos.Size = new System.Drawing.Size(87, 20);
-            this.lblapellidos.TabIndex = 2;
-            this.lblapellidos.Text = "Apellidos:";
+            this.rbsoltero.AutoSize = true;
+            this.rbsoltero.Location = new System.Drawing.Point(100, 323);
+            this.rbsoltero.Name = "rbsoltero";
+            this.rbsoltero.Size = new System.Drawing.Size(69, 17);
+            this.rbsoltero.TabIndex = 18;
+            this.rbsoltero.TabStop = true;
+            this.rbsoltero.Text = "Soltero/a";
+            this.rbsoltero.UseVisualStyleBackColor = true;
             // 
-            // lblfechan
+            // rbcasado
             // 
-            this.lblfechan.AutoSize = true;
-            this.lblfechan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfechan.Location = new System.Drawing.Point(13, 139);
-            this.lblfechan.Name = "lblfechan";
-            this.lblfechan.Size = new System.Drawing.Size(156, 20);
-            this.lblfechan.TabIndex = 4;
-            this.lblfechan.Text = "Fecha nacimiento:";
+            this.rbcasado.AutoSize = true;
+            this.rbcasado.Location = new System.Drawing.Point(17, 323);
+            this.rbcasado.Name = "rbcasado";
+            this.rbcasado.Size = new System.Drawing.Size(72, 17);
+            this.rbcasado.TabIndex = 17;
+            this.rbcasado.TabStop = true;
+            this.rbcasado.Text = "Casado/a";
+            this.rbcasado.UseVisualStyleBackColor = true;
             // 
-            // txtemail
+            // lblestadoc
             // 
-            this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.Location = new System.Drawing.Point(150, 175);
-            this.txtemail.Multiline = true;
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(217, 25);
-            this.txtemail.TabIndex = 7;
-            // 
-            // lblemail
-            // 
-            this.lblemail.AutoSize = true;
-            this.lblemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblemail.Location = new System.Drawing.Point(18, 175);
-            this.lblemail.Name = "lblemail";
-            this.lblemail.Size = new System.Drawing.Size(58, 20);
-            this.lblemail.TabIndex = 6;
-            this.lblemail.Text = "Email:";
-            // 
-            // txttelefono
-            // 
-            this.txttelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttelefono.Location = new System.Drawing.Point(150, 218);
-            this.txttelefono.Multiline = true;
-            this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(217, 25);
-            this.txttelefono.TabIndex = 9;
-            // 
-            // lbltelefono
-            // 
-            this.lbltelefono.AutoSize = true;
-            this.lbltelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltelefono.Location = new System.Drawing.Point(18, 218);
-            this.lbltelefono.Name = "lbltelefono";
-            this.lbltelefono.Size = new System.Drawing.Size(84, 20);
-            this.lbltelefono.TabIndex = 8;
-            this.lbltelefono.Text = "Telefono:";
-            // 
-            // lbldepartamento
-            // 
-            this.lbldepartamento.AutoSize = true;
-            this.lbldepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldepartamento.Location = new System.Drawing.Point(13, 258);
-            this.lbldepartamento.Name = "lbldepartamento";
-            this.lbldepartamento.Size = new System.Drawing.Size(129, 20);
-            this.lbldepartamento.TabIndex = 10;
-            this.lbldepartamento.Text = "Departamento:";
-            // 
-            // btnllenar
-            // 
-            this.btnllenar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnllenar.Location = new System.Drawing.Point(12, 47);
-            this.btnllenar.Name = "btnllenar";
-            this.btnllenar.Size = new System.Drawing.Size(78, 109);
-            this.btnllenar.TabIndex = 12;
-            this.btnllenar.Text = "Llenar";
-            this.btnllenar.UseVisualStyleBackColor = true;
-            // 
-            // btnborrar
-            // 
-            this.btnborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnborrar.Location = new System.Drawing.Point(12, 209);
-            this.btnborrar.Name = "btnborrar";
-            this.btnborrar.Size = new System.Drawing.Size(78, 108);
-            this.btnborrar.TabIndex = 13;
-            this.btnborrar.Text = "Borrar";
-            this.btnborrar.UseVisualStyleBackColor = true;
-            // 
-            // dtpfechaNa
-            // 
-            this.dtpfechaNa.Location = new System.Drawing.Point(175, 139);
-            this.dtpfechaNa.Name = "dtpfechaNa";
-            this.dtpfechaNa.Size = new System.Drawing.Size(192, 20);
-            this.dtpfechaNa.TabIndex = 14;
+            this.lblestadoc.AutoSize = true;
+            this.lblestadoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblestadoc.Location = new System.Drawing.Point(13, 291);
+            this.lblestadoc.Name = "lblestadoc";
+            this.lblestadoc.Size = new System.Drawing.Size(105, 20);
+            this.lblestadoc.TabIndex = 16;
+            this.lblestadoc.Text = "Estado civil:";
             // 
             // cmbdepart
             // 
+            this.cmbdepart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbdepart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbdepart.FormattingEnabled = true;
             this.cmbdepart.Items.AddRange(new object[] {
@@ -269,89 +210,135 @@
             this.cmbdepart.Size = new System.Drawing.Size(217, 28);
             this.cmbdepart.TabIndex = 15;
             // 
-            // lblestadoc
+            // dtpfechaNa
             // 
-            this.lblestadoc.AutoSize = true;
-            this.lblestadoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblestadoc.Location = new System.Drawing.Point(13, 291);
-            this.lblestadoc.Name = "lblestadoc";
-            this.lblestadoc.Size = new System.Drawing.Size(105, 20);
-            this.lblestadoc.TabIndex = 16;
-            this.lblestadoc.Text = "Estado civil:";
+            this.dtpfechaNa.Location = new System.Drawing.Point(175, 139);
+            this.dtpfechaNa.Name = "dtpfechaNa";
+            this.dtpfechaNa.Size = new System.Drawing.Size(192, 20);
+            this.dtpfechaNa.TabIndex = 14;
             // 
-            // rbcasado
+            // lbldepartamento
             // 
-            this.rbcasado.AutoSize = true;
-            this.rbcasado.Location = new System.Drawing.Point(17, 323);
-            this.rbcasado.Name = "rbcasado";
-            this.rbcasado.Size = new System.Drawing.Size(72, 17);
-            this.rbcasado.TabIndex = 17;
-            this.rbcasado.TabStop = true;
-            this.rbcasado.Text = "Casado/a";
-            this.rbcasado.UseVisualStyleBackColor = true;
+            this.lbldepartamento.AutoSize = true;
+            this.lbldepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldepartamento.Location = new System.Drawing.Point(13, 258);
+            this.lbldepartamento.Name = "lbldepartamento";
+            this.lbldepartamento.Size = new System.Drawing.Size(129, 20);
+            this.lbldepartamento.TabIndex = 10;
+            this.lbldepartamento.Text = "Departamento:";
             // 
-            // rbsoltero
+            // txttelefono
             // 
-            this.rbsoltero.AutoSize = true;
-            this.rbsoltero.Location = new System.Drawing.Point(100, 323);
-            this.rbsoltero.Name = "rbsoltero";
-            this.rbsoltero.Size = new System.Drawing.Size(69, 17);
-            this.rbsoltero.TabIndex = 18;
-            this.rbsoltero.TabStop = true;
-            this.rbsoltero.Text = "Soltero/a";
-            this.rbsoltero.UseVisualStyleBackColor = true;
+            this.txttelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttelefono.Location = new System.Drawing.Point(150, 218);
+            this.txttelefono.Multiline = true;
+            this.txttelefono.Name = "txttelefono";
+            this.txttelefono.Size = new System.Drawing.Size(217, 25);
+            this.txttelefono.TabIndex = 9;
+            this.txttelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefono_KeyPress);
             // 
-            // rbdivorciado
+            // lbltelefono
             // 
-            this.rbdivorciado.AutoSize = true;
-            this.rbdivorciado.Location = new System.Drawing.Point(191, 323);
-            this.rbdivorciado.Name = "rbdivorciado";
-            this.rbdivorciado.Size = new System.Drawing.Size(87, 17);
-            this.rbdivorciado.TabIndex = 19;
-            this.rbdivorciado.TabStop = true;
-            this.rbdivorciado.Text = "Divorciado/a";
-            this.rbdivorciado.UseVisualStyleBackColor = true;
+            this.lbltelefono.AutoSize = true;
+            this.lbltelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltelefono.Location = new System.Drawing.Point(18, 218);
+            this.lbltelefono.Name = "lbltelefono";
+            this.lbltelefono.Size = new System.Drawing.Size(84, 20);
+            this.lbltelefono.TabIndex = 8;
+            this.lbltelefono.Text = "Telefono:";
             // 
-            // rbviudo
+            // txtemail
             // 
-            this.rbviudo.AutoSize = true;
-            this.rbviudo.Location = new System.Drawing.Point(295, 323);
-            this.rbviudo.Name = "rbviudo";
-            this.rbviudo.Size = new System.Drawing.Size(63, 17);
-            this.rbviudo.TabIndex = 20;
-            this.rbviudo.TabStop = true;
-            this.rbviudo.Text = "Viudo/a";
-            this.rbviudo.UseVisualStyleBackColor = true;
+            this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemail.Location = new System.Drawing.Point(150, 175);
+            this.txtemail.Multiline = true;
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(217, 25);
+            this.txtemail.TabIndex = 7;
+            this.txtemail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtemail_KeyPress);
             // 
-            // lblidentidad
+            // lblemail
             // 
-            this.lblidentidad.AutoSize = true;
-            this.lblidentidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblidentidad.Location = new System.Drawing.Point(18, 18);
-            this.lblidentidad.Name = "lblidentidad";
-            this.lblidentidad.Size = new System.Drawing.Size(90, 20);
-            this.lblidentidad.TabIndex = 21;
-            this.lblidentidad.Text = "Identidad:";
+            this.lblemail.AutoSize = true;
+            this.lblemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblemail.Location = new System.Drawing.Point(18, 175);
+            this.lblemail.Name = "lblemail";
+            this.lblemail.Size = new System.Drawing.Size(58, 20);
+            this.lblemail.TabIndex = 6;
+            this.lblemail.Text = "Email:";
             // 
-            // txtid
+            // lblfechan
             // 
-            this.txtid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtid.Location = new System.Drawing.Point(150, 13);
-            this.txtid.Multiline = true;
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(217, 25);
-            this.txtid.TabIndex = 22;
+            this.lblfechan.AutoSize = true;
+            this.lblfechan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfechan.Location = new System.Drawing.Point(13, 139);
+            this.lblfechan.Name = "lblfechan";
+            this.lblfechan.Size = new System.Drawing.Size(156, 20);
+            this.lblfechan.TabIndex = 4;
+            this.lblfechan.Text = "Fecha nacimiento:";
+            // 
+            // txtapellidos
+            // 
+            this.txtapellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtapellidos.Location = new System.Drawing.Point(150, 98);
+            this.txtapellidos.Multiline = true;
+            this.txtapellidos.Name = "txtapellidos";
+            this.txtapellidos.Size = new System.Drawing.Size(217, 25);
+            this.txtapellidos.TabIndex = 3;
+            this.txtapellidos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellidos_KeyPress);
+            // 
+            // lblapellidos
+            // 
+            this.lblapellidos.AutoSize = true;
+            this.lblapellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblapellidos.Location = new System.Drawing.Point(18, 98);
+            this.lblapellidos.Name = "lblapellidos";
+            this.lblapellidos.Size = new System.Drawing.Size(87, 20);
+            this.lblapellidos.TabIndex = 2;
+            this.lblapellidos.Text = "Apellidos:";
+            // 
+            // txtnombres
+            // 
+            this.txtnombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombres.Location = new System.Drawing.Point(150, 58);
+            this.txtnombres.Multiline = true;
+            this.txtnombres.Name = "txtnombres";
+            this.txtnombres.Size = new System.Drawing.Size(217, 25);
+            this.txtnombres.TabIndex = 1;
+            this.txtnombres.TextChanged += new System.EventHandler(this.txtnombres_TextChanged);
+            this.txtnombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombres_KeyPress);
+            // 
+            // lblnombres
+            // 
+            this.lblnombres.AutoSize = true;
+            this.lblnombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnombres.Location = new System.Drawing.Point(13, 61);
+            this.lblnombres.Name = "lblnombres";
+            this.lblnombres.Size = new System.Drawing.Size(85, 20);
+            this.lblnombres.TabIndex = 0;
+            this.lblnombres.Text = "Nombres:";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel3.Controls.Add(this.ltmostrardatos);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.btnborrar);
+            this.panel3.Controls.Add(this.btnllenar);
+            this.panel3.Location = new System.Drawing.Point(397, 87);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(391, 364);
+            this.panel3.TabIndex = 3;
             // 
             // ltmostrardatos
             // 
             this.ltmostrardatos.Enabled = false;
-            this.ltmostrardatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ltmostrardatos.FormattingEnabled = true;
-            this.ltmostrardatos.ItemHeight = 20;
-            this.ltmostrardatos.Location = new System.Drawing.Point(110, 47);
+            this.ltmostrardatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltmostrardatos.Location = new System.Drawing.Point(115, 47);
+            this.ltmostrardatos.Multiline = true;
             this.ltmostrardatos.Name = "ltmostrardatos";
-            this.ltmostrardatos.Size = new System.Drawing.Size(263, 284);
-            this.ltmostrardatos.TabIndex = 14;
+            this.ltmostrardatos.Size = new System.Drawing.Size(262, 302);
+            this.ltmostrardatos.TabIndex = 23;
             // 
             // label1
             // 
@@ -362,6 +349,28 @@
             this.label1.Size = new System.Drawing.Size(155, 20);
             this.label1.TabIndex = 23;
             this.label1.Text = "Datos del usuario:";
+            // 
+            // btnborrar
+            // 
+            this.btnborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnborrar.Location = new System.Drawing.Point(12, 241);
+            this.btnborrar.Name = "btnborrar";
+            this.btnborrar.Size = new System.Drawing.Size(78, 108);
+            this.btnborrar.TabIndex = 13;
+            this.btnborrar.Text = "Borrar";
+            this.btnborrar.UseVisualStyleBackColor = true;
+            this.btnborrar.Click += new System.EventHandler(this.btnborrar_Click);
+            // 
+            // btnllenar
+            // 
+            this.btnllenar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnllenar.Location = new System.Drawing.Point(12, 47);
+            this.btnllenar.Name = "btnllenar";
+            this.btnllenar.Size = new System.Drawing.Size(78, 109);
+            this.btnllenar.TabIndex = 12;
+            this.btnllenar.Text = "Llenar";
+            this.btnllenar.UseVisualStyleBackColor = true;
+            this.btnllenar.Click += new System.EventHandler(this.btnllenar_Click);
             // 
             // Form1
             // 
@@ -411,8 +420,8 @@
         private System.Windows.Forms.ComboBox cmbdepart;
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label lblidentidad;
-        private System.Windows.Forms.ListBox ltmostrardatos;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox ltmostrardatos;
     }
 }
 
